@@ -11,7 +11,7 @@ const IndexPage = ({data}) => {
       <h1>PennApps XXIII</h1>
       {
         data.allMdx.nodes.map((node) => (
-          <Section content={node.body} key={node.order} />
+          <Section content={node.body} key={node.frontmatter.order} />
         ))
       }
     </main>

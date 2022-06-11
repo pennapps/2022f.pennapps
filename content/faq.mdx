@@ -2,22 +2,28 @@
 order: "3"
 ---
 
+import Collapsible from 'react-collapsible';
+
 # FAQ
-## How much will PennApps cost me?
-Not only will we provide you with a weekend's worth of swag, meals, drinks, and snacks and a place to crash when you need a break from coding, we'll even help cover your travel. This cycle we're excited to have even more travel reimbursements available than past years!
 
-## Once I am accepted, what do I need to bring?
-*Need:* Laptop and charger, cellphone and charger, sleeping bag, pillow, toiletries, a couple changes of clothes (nerdy shirts are particularly appreciated). Consider bringing clothes that can get wet (I can neither confirm nor deny there may or may not be a water fight).
+<Collapsible trigger={<h2> How much will PennApps cost me? </h2>}>
+    <p> Not only will we provide you with a weekend's worth of swag, meals, drinks, and snacks and a place to crash when you need a break from coding, we'll even help cover your travel. This cycle we're excited to have even more travel reimbursements available than past years! </p>
+</Collapsible>
 
-*Don't need:* a pre-determined team, an idea for an app, food or drink.
+<Collapsible trigger={<h2> Once I am accepted, what do I need to bring? </h2>}>
+    <p><em>Need:</em> Laptop and charger, cellphone and charger, sleeping bag, pillow, toiletries, a couple changes of clothes (nerdy shirts are particularly appreciated). Consider bringing clothes that can get wet (I can neither confirm nor deny there may or may not be a water fight). </p>
+    <p><em>Need:</em> a pre-determined team, an idea for an app, food or drink. </p>
+    <p><em>Please don't bring:</em> Firearms or other weapons, alcohol, illegal drugs, soldering or similar equipment, animals (no matter how adorable). </p>
+</Collapsible>
 
-*Please don't bring:* Firearms or other weapons, alcohol, illegal drugs, soldering or similar equipment, animals (no matter how adorable).
+<Collapsible trigger={<h2> How do reimbursements work? </h2>}>
+    <p> When you're accepted, we'll have a page where you can submit your required travel reimbursement forms and receipts. For each location hackers will be coming from, we’ll determine a reasonable cap. We will reimburse travel costs up to this cap—if you go over, we'll still reimburse the amount of the cap, but no more. </p>
+</Collapsible>
 
-## How do reimbursements work?
-When you're accepted, we'll have a page where you can submit your required travel reimbursement forms and receipts. For each location hackers will be coming from, we’ll determine a reasonable cap. We will reimburse travel costs up to this cap—if you go over, we'll still reimburse the amount of the cap, but no more.
+<Collapsible trigger={<h2> When/where can I hack? </h2>}>
+    <p> PennApps will start with the kick-off ceremony at Penn Engineering Quad. There will be events planned throughout the day for those who arrive early. A detailed schedule of events and locations will be posted later. All work eligible for prizes must be completed between Friday night after the kick-off and Sunday morning. </p>
+</Collapsible>
 
-## When/where can I hack?
-PennApps will start with the kick-off ceremony at Penn Engineering Quad. There will be events planned throughout the day for those who arrive early. A detailed schedule of events and locations will be posted later. All work eligible for prizes must be completed between Friday night after the kick-off and Sunday morning.
-
-## What can I win?
-It's not about winning—it's about learning and making friends that last for a lifetime (so everyone's a winner!). If you're thinking, "that's adorable...but really," then we've got you covered too. A panel of professional judges will select the top three hacks based on the following criteria: creativity, technical difficulty, polish, and usefulness. Top prizes are TBA, but usually involve thousands of dollars and insane perks from company sponsors. Most sponsors offer their own prizes too for specific categories, which they judge and fund themselves. We had well over $40k worth of prizes up for grabs last time including Nintendo Switches and Oculus Rifts, if you like numbers.
+<Collapsible trigger={<h2> What can I win? </h2>}>
+    <p> It's not about winning—it's about learning and making friends that last for a lifetime (so everyone's a winner!). If you're thinking, "that's adorable...but really," then we've got you covered too. A panel of professional judges will select the top three hacks based on the following criteria: creativity, technical difficulty, polish, and usefulness. Top prizes are TBA, but usually involve thousands of dollars and insane perks from company sponsors. Most sponsors offer their own prizes too for specific categories, which they judge and fund themselves. We had well over $40k worth of prizes up for grabs last time including Nintendo Switches and Oculus Rifts, if you like numbers. </p>
+</Collapsible>
