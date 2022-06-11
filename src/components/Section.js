@@ -1,11 +1,13 @@
 import * as React from 'react'
 import '../styles/index.css'
+import {MDXRenderer} from "gatsby-plugin-mdx";
 
-const Section = ({title, content}) => {
+const Section = ({content, key}) => {
   return (
-    <div>
-      <h2>{title}</h2>
-      <p>{content}</p>
+    <div key={key}>
+      <MDXRenderer>
+        {content}
+      </MDXRenderer>
     </div>
   )
 }
