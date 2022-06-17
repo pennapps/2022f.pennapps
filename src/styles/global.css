@@ -20,7 +20,8 @@
   h1 {
     @apply font-bold;
     text-align: center;
-    @apply text-3xl
+    @apply text-3xl;
+    @apply text-emerald;
   }
   h2 {
     @apply font-bold;
