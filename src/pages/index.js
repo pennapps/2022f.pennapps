@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Section from '../components/Section'
+import FAQ from '../components/FAQ'
 import '../styles/index.css'
 import {graphql} from "gatsby";
 
@@ -11,6 +12,7 @@ const IndexPage = ({data}) => {
       <h1>PennApps XXIII</h1>
       {
         data.allMdx.nodes.map((node) => (
+          node.frontmatter.title === "FAQ" ? <FAQ content={node.rawBody} key={node.frontmatter.order} /> :
           <Section content={node.body} key={node.frontmatter.order} />
         ))
       }
@@ -23,8 +25,10 @@ export const query = graphql`query {
     nodes {
       frontmatter {
         order
+        title
       }
       body
+      rawBody
     }
   }
 }`
