@@ -18,19 +18,20 @@
     src: url("/fonts/HalisR-Light.ttf") format('truetype'), url("/fonts/HalisR-Light.woff") format("woff"), url("/fonts/HalisR-Light.woff2") format("woff2")
   }
   h1 {
-    @apply font-bold;
+    @apply font-bold text-3xl text-honeydew;
     text-align: center;
-    @apply text-3xl;
-    @apply text-emerald;
   }
   h2 {
-    @apply font-bold;
+    @apply font-bold text-2xl;
     text-transform: uppercase;
   }
   h3 {
-    @apply font-normal;
+    @apply font-normal text-xl;
     text-transform: uppercase;
-}
+  }
+  h4 {
+    @apply font-normal;
+  }
   p {
     @apply font-normal;
     font-size: 1.0em;
@@ -48,5 +49,15 @@
     font-size: 1.3em;
     padding: 10px
   }
+
+
+  .heading {
+    @apply text-center my-8
+  }
+
+  .heading h1{
+    @apply text-emerald mb-8
+  }
+
 }
 

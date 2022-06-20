@@ -3,14 +3,15 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Section from '../components/Section'
 import {graphql} from "gatsby";
+import Heading from '../components/Heading';
 
 // markup
 const IndexPage = ({data}) => {
   return (
     <main>
       <Navbar/>
+      <Heading/>
       <title>PennApps XXIII</title>
-      <h1>PennApps XXIII</h1>
       {
         data.allMdx.nodes.map((node) => (
           <Section content={node.body} key={node.order} />
