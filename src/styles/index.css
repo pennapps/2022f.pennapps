@@ -124,23 +124,23 @@ textarea {
 }
 
 h1 {
-    font-family: HalisR-Black;
+    font-family: futura-pt, sans-serif;
     text-align: center;
     /* border for sure, but it varies :/ */
 }
 
 h2 {
-    font-family: HalisR-Black;
+    font-family: futura-pt, sans-serif;
     text-transform: uppercase;
 }
 
 h3 {
-    font-family: HalisR-Black;
+    font-family: futura-pt, sans-serif;
     text-transform: uppercase;
 }
 
 p {
-    font-family: HalisR-Regular;
+    font-family: futura-pt, sans-serif;
     font-size: 1.0em;
 }
 
