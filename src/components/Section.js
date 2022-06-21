@@ -1,5 +1,4 @@
 import * as React from 'react'
-import '../styles/index.css'
 import {MDXRenderer} from "gatsby-plugin-mdx";
 
 const Section = ({content, key}) => {
