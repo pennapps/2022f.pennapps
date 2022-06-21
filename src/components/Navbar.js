@@ -23,14 +23,14 @@ function Links(props) {
     <>
       {/* shows if screen is not sm */}
       {props.links.map((link, i) => 
-        <a key={i} className="hidden sm:inline" href={`#${link.toLowerCase()}`}>{link}</a>)
+        <a key={i} className="hidden sm:inline bg-white" href={`#${link}`}>{link}</a>)
       }
 
       {/* shows if screen is sm */}
       <button className="sm:hidden"><FaBars size="1.5em" onClick={toggleShowMenu}/></button>
       <div className={showMenu? "sm:hidden absolute mt-8 right-0 flex flex-col" : "hidden"}>
         {props.links.map((link, i) => 
-          <a key={i} onClick={toggleShowMenu} href={`#${link.toLowerCase()}`}>{link}</a> )
+          <a key={i} onClick={toggleShowMenu} href={`#${link}`}>{link}</a> )
         }
       </div>
     </>

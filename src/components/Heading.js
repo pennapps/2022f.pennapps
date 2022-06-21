@@ -4,7 +4,7 @@ import Header from '../../content/heading.mdx'
 
 function Heading() {
   return (
-    <div className="heading">
+    <div className="heading mx-auto">
       <Header/>
     </div>
   )

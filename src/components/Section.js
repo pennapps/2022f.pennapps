@@ -1,9 +1,9 @@
 import * as React from 'react'
 import {MDXRenderer} from "gatsby-plugin-mdx";
 
-const Section = ({content, key}) => {
+const Section = ({content, id}) => {
   return (
-    <div key={key}>
+    <div key={id} id={id} className="section">
       <MDXRenderer>
         {content}
       </MDXRenderer>

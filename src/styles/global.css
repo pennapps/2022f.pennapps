@@ -1,63 +1,159 @@
-@tailwind components;
-@tailwind utilities;
-
 @tailwind base;
 @layer base {
+  @import url("https://p.typekit.net/p.css?s=1&k=tri7gwo&ht=tk&f=139.140.173.174.175.176.10881.10882.10884.10885&a=21288430&app=typekit&e=css");
+
   @font-face {
-    font-family: "HalisR-Black";
-    src: url("/fonts/HalisR-Black.ttf") format('truetype'), url("/fonts/HalisR-Black.woff") format("woff"), url("/fonts/HalisR-Black.woff2") format("woff2")
+      font-family:"proxima-nova";
+      src:url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+      font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
   }
-  
+
   @font-face {
-    font-family: "HalisR-Regular";
-    src: url("/fonts/HalisR-Regular.ttf") format('truetype'), url("/fonts/HalisR-Regular.woff") format("woff"), url("/fonts/HalisR-Regular.woff2") format("woff2")
+      font-family:"proxima-nova";
+      src:url("https://use.typekit.net/af/4de20a/00000000000000007735e604/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/4de20a/00000000000000007735e604/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/4de20a/00000000000000007735e604/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+      font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
   }
-  
+
   @font-face {
-    font-family: "HalisR-Light";
-    src: url("/fonts/HalisR-Light.ttf") format('truetype'), url("/fonts/HalisR-Light.woff") format("woff"), url("/fonts/HalisR-Light.woff2") format("woff2")
+      font-family:"proxima-nova";
+      src:url("https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+      font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
   }
+
+  @font-face {
+      font-family:"proxima-nova";
+      src:url("https://use.typekit.net/af/144da4/00000000000000007735e619/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff2"),url("https://use.typekit.net/af/144da4/00000000000000007735e619/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff"),url("https://use.typekit.net/af/144da4/00000000000000007735e619/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("opentype");
+      font-display:auto;font-style:italic;font-weight:600;font-stretch:normal;
+  }
+
+  @font-face {
+      font-family:"proxima-nova";
+      src:url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+      font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+      }
+
+  @font-face {
+      font-family:"proxima-nova";
+      src:url("https://use.typekit.net/af/3322cc/00000000000000007735e616/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/3322cc/00000000000000007735e616/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/3322cc/00000000000000007735e616/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+      font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+  }
+
+  @font-face {
+      font-family:"futura-pt";
+      src:url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+      font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+  }
+
+  @font-face {
+      font-family:"futura-pt";
+      src:url("https://use.typekit.net/af/eb729a/000000000000000000010092/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/eb729a/000000000000000000010092/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/eb729a/000000000000000000010092/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+      font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+  }
+
+  @font-face {
+      font-family:"futura-pt";
+      src:url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+      font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+  }
+
+  @font-face {
+      font-family:"futura-pt";
+      src:url("https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+      font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+  }
+
+  .tk-proxima-nova { font-family: "proxima-nova",sans-serif; }
+  .tk-futura-pt { font-family: "futura-pt",sans-serif; }
+
   h1 {
-    @apply font-bold text-3xl text-honeydew;
-    text-align: center;
+    @apply font-bold text-3xl text-green mb-5;
+    font-family: futura-pt, sans-serif;
   }
+
   h2 {
-    @apply font-bold text-2xl;
-    text-transform: uppercase;
+    @apply font-bold text-2xl text-green mb-1.5;
+    font-family: futura-pt, sans-serif;
   }
+
   h3 {
-    @apply font-normal text-xl;
-    text-transform: uppercase;
+    @apply font-normal text-xl text-green mb-1.5;
+    font-family: futura-pt, sans-serif;
   }
+
   h4 {
-    @apply font-normal;
+    @apply font-normal text-green;
+    font-family: futura-pt, sans-serif;
   }
+
   p {
-    @apply font-normal;
+    @apply font-normal text-green mb-1.5;
+    font-family: proxima-nova, sans-serif;
     font-size: 1.0em;
   }
 
+  a {
+    text-decoration: underline;
+    font-weight: normal;
+  }
+
   ul {
-    @apply font-normal;
+    @apply font-normal text-green;
+    font-family: proxima-nova, sans-serif;
     font-size: 1.3em;
     list-style-type: circle; 
     padding: 10px
   }
 
   ol {
-    @apply font-normal;
+    @apply font-normal text-green;
+    font-family: proxima-nova, sans-serif;
     font-size: 1.3em;
     padding: 10px
   }
 
+  main {
+    @apply bg-linen;
+  }
+}
 
+@tailwind components;
+@layer components {
   .heading {
-    @apply text-center my-8
+    @apply px-[15%] md:px-[20%] lg:px-[30%] text-center mb-8 pt-24;
   }
 
   .heading h1{
-    @apply text-emerald mb-8
+    @apply text-green mb-8;
   }
 
+  nav {
+    @apply text-green bg-white px-4;
+    font-family: proxima-nova, sans-serif;
+    position: fixed;
+    top: 0;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .section {
+    @apply px-[10%] md:px-[15%] lg:px-[25%] py-3;
+    margin: 0 auto;
+  }
+
+  .faq-question {
+    @apply bg-sand py-1 px-3;
+    font-size: 1em;
+  }
+
+  .faq-answer {
+    @apply px-5 pb-0.5;
+  }
 }
 
+@tailwind utilities;
