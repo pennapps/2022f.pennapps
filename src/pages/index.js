@@ -2,6 +2,8 @@ import * as React from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Section from '../components/Section'
+import FAQ from '../components/FAQ'
+import '../styles/index.css'
 import {graphql} from "gatsby";
 import Heading from '../components/Heading';
 
@@ -14,7 +16,8 @@ const IndexPage = ({data}) => {
       <title>PennApps XXIII</title>
       {
         data.allMdx.nodes.map((node) => (
-          <Section content={node.body} key={node.order} />
+          node.frontmatter.title === "FAQ" ? <FAQ content={node.rawBody} key={node.frontmatter.order} /> :
+          <Section content={node.body} key={node.frontmatter.order} />
         ))
       }
       <Footer/>
@@ -27,8 +30,10 @@ export const query = graphql`query {
     nodes {
       frontmatter {
         order
+        title
       }
       body
+      rawBody
     }
   }
 }`
