@@ -3,9 +3,9 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Section from '../components/Section'
 import FAQ from '../components/FAQ'
+import Heading from '../components/Heading';
 import '../styles/index.css'
 import {graphql} from "gatsby";
-import Heading from '../components/Heading';
 
 // markup
 const IndexPage = ({data}) => {
@@ -16,8 +16,11 @@ const IndexPage = ({data}) => {
       <title>PennApps XXIII</title>
       {
         data.allMdx.nodes.map((node) => (
-          node.frontmatter.title === "FAQ" ? <FAQ content={node.rawBody} key={node.frontmatter.order} /> :
-          <Section content={node.body} key={node.frontmatter.order} />
+          node.frontmatter.order 
+          ? node.frontmatter.title === "FAQ" ?
+              <FAQ content={node.rawBody} id={node.frontmatter.title} /> :
+              <Section content={node.body} id={node.frontmatter.title} />
+          : null
         ))
       }
       <Footer/>

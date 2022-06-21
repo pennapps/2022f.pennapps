@@ -125,34 +125,29 @@ textarea {
 
 h1 {
     font-family: futura-pt, sans-serif;
-    text-align: center;
-    /* border for sure, but it varies :/ */
 }
 
 h2 {
     font-family: futura-pt, sans-serif;
-    text-transform: uppercase;
 }
 
 h3 {
     font-family: futura-pt, sans-serif;
-    text-transform: uppercase;
 }
 
 p {
     font-family: futura-pt, sans-serif;
-    font-size: 1.0em;
 }
 
 ul {
-    font-family: HalisR-Regular;
+    font-family: proxima-nova, sans-serif;
     font-size: 1.3em;
     list-style-type: circle; 
     padding: 10px
 }
 
 ol {
-    font-family: HalisR-Regular;
+    font-family: proxima-nova;
     font-size: 1.3em;
     padding: 10px
 }
@@ -365,9 +360,9 @@ h1 span {
  * Hide visually and from screen readers
  */
 
-.hidden {
+/* .hidden {
     display: none !important;
-}
+} */
 
 /*
  * Hide only visually, but have it available for screen readers:
