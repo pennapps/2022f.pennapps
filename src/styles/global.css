@@ -154,6 +154,57 @@
   .faq-answer {
     @apply px-5 pb-0.5;
   }
+
+  .footer {
+    position: relative;
+    margin-top: 50px;
+  }
+
+  .footer-content {
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+  }
+
+  @media screen and (min-width: 1442px) {
+    .footer-content {
+      left: calc((100vw - 1442px) / 2 + 80px);
+    }
+  }
+
+  .footer-img {
+    margin: 0 auto;
+  }
+
+  .footer-content a {
+    @apply text-sand;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-content p {
+    @apply text-sand;
+  }
+
+  .footer-content h1 {
+    @apply text-sand;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 45px;
+  }
+
+  .footer-social-media {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-social-media-text {
+    margin-left: 10px;
+  }
 }
 
 @tailwind utilities;
