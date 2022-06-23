@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/2022f.pennapps",
   siteMetadata: {
     title: `2022f.pennapps`,
     siteUrl: `https://www.pennapps.github.io/2022f.pennapps/`,
