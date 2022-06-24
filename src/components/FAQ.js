@@ -12,14 +12,17 @@ const FAQ = ({content, id}) => {
     for (let i = 1; i < tokens.length; i++) {
       if (tokens[i]) {
         answers.push(
-          <p className="faq-answer" key={tokens[i]}>
+          <div className="faq-answer" key={tokens[i]}>
             <ReactMarkdown>{tokens[i]}</ReactMarkdown>
-          </p>
+          </div>
         );
       }
     }
     return ( 
-      <Collapsible trigger={<h2 className="faq-question" key={question}>{`${question}`}</h2>}>
+      <Collapsible 
+        key={question} 
+        trigger={<h2 className="faq-question">{question}</h2>}
+      >
         {answers}
       </Collapsible>
     );

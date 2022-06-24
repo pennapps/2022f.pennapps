@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import { FaBars } from "@react-icons/all-files/fa/FaBars";
 
 
-const links = ['About', 'Apply', 'FAQ', 'Logistics', 'Sponsors']
+const links = ['About', 'Apply', 'Logistics', 'FAQ']
 
 function Navbar() {
   return (
     <nav className="w-full h-12 flex flex-row justify-between items-center">
-      <a href="#">PennApps</a>
+      <a href="#top">PennApps</a>
       <div className="flex flex-row space-x-6">
         <Links links={links}/>
       </div>
