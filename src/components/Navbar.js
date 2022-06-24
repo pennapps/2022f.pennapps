@@ -28,7 +28,7 @@ function Links(props) {
 
       {/* shows if screen is sm */}
       <button className="sm:hidden"><FaBars size="1.5em" onClick={toggleShowMenu}/></button>
-      <div className={showMenu? "sm:hidden absolute mt-8 right-0 flex flex-col" : "hidden"}>
+      <div className={showMenu? "sm:hidden absolute mt-8 top-4 right-0 flex flex-col mobile-nav" : "hidden"}>
         {props.links.map((link, i) => 
           <a key={i} onClick={toggleShowMenu} href={`#${link}`}>{link}</a> )
         }

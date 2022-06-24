@@ -31,7 +31,7 @@ const FAQ = ({content, id}) => {
   return (
     <div id={id} key={id} className="section">
         <h1>FAQ</h1>
-        <ReactMarkdown>We know you have a lot of questions, so check below for some of the most common answers (and [this document](https://docs.google.com/document/d/19Hjom5ZjHyzcFwHYFqVHLFV_sdFr7ki_aYCy4Z52KWU/edit) for even more) or drop us a line at [contact@pennapps.com](mailto:contact@pennapps.com).</ReactMarkdown>
+        <ReactMarkdown>We know you have a lot of questions, so check below for some of the most common answers. If you have other questions, drop us a line at [contact@pennapps.com](mailto:contact@pennapps.com).</ReactMarkdown>
         {output}
     </div>
   )
