@@ -10,10 +10,9 @@ import {graphql} from "gatsby";
 // markup
 const IndexPage = ({data}) => {
   return (
-    <main>
+    <main id="">
       <Navbar/>
       <Heading/>
-      <title>PennApps XXIII</title>
       {
         data.allMdx.nodes.map((node) => (
           node.frontmatter.order 
