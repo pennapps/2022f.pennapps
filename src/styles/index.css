@@ -108,37 +108,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-@font-face {
-    font-family: "HalisR-Black";
-    src: url("/fonts/HalisR-Black.ttf") format('truetype'), url("/fonts/HalisR-Black.woff") format("woff"), url("/fonts/HalisR-Black.woff2") format("woff2")
-}
-
-@font-face {
-    font-family: "HalisR-Regular";
-    src: url("/fonts/HalisR-Regular.ttf") format('truetype'), url("/fonts/HalisR-Regular.woff") format("woff"), url("/fonts/HalisR-Regular.woff2") format("woff2")
-}
-
-@font-face {
-    font-family: "HalisR-Light";
-    src: url("/fonts/HalisR-Light.ttf") format('truetype'), url("/fonts/HalisR-Light.woff") format("woff"), url("/fonts/HalisR-Light.woff2") format("woff2")
-}
-
-h1 {
-    font-family: futura-pt, sans-serif;
-}
-
-h2 {
-    font-family: futura-pt, sans-serif;
-}
-
-h3 {
-    font-family: futura-pt, sans-serif;
-}
-
-p {
-    font-family: futura-pt, sans-serif;
-}
-
 ul {
     font-family: proxima-nova, sans-serif;
     font-size: 1.3em;
@@ -191,11 +160,11 @@ ol {
 .title-font {
     color: #f07b7c;
     font-size: 1.7em !important;
-    font-family: HalisR-Black;
+    font-family: futura-pt;
 }
 
 .big-font {
-    font-family: HalisR-Black;
+    font-family: futura-pt;
     font-size: 2em !important;
 }
 
@@ -214,7 +183,7 @@ ol {
 .item.extend{
     background-color: #051221;
     color: #ffffff;
-    font-family: HalisR-Regular;
+    font-family: futura-pt;
 }
 
 .current-section {
@@ -223,7 +192,7 @@ ol {
 
 .section-title {
     position: relative;
-    font-family: HalisR-Black;
+    font-family: futura-pt;
     color: #06263d
 }
 h1 span {
