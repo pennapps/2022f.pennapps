@@ -118,14 +118,6 @@
 
 @tailwind components;
 @layer components {
-  .heading {
-    @apply px-[15%] md:px-[20%] lg:px-[30%] text-center mb-4 pt-24;
-  }
-
-  .heading h1{
-    @apply text-green mb-8;
-  }
-
   nav {
     @apply text-green bg-white px-4;
     font-family: proxima-nova, sans-serif;
