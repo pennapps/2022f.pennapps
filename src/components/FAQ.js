@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Collapsible from 'react-collapsible';
 import ReactMarkdown from 'react-markdown'
+import { VscTriangleDown, VscTriangleUp } from "react-icons/vsc"
 import '../styles/index.css'
 
 const FAQ = ({content, id}) => {
@@ -18,8 +19,16 @@ const FAQ = ({content, id}) => {
         );
       }
     }
+    let trigger_closed = <div className="faq-collapsible">
+      <h2 className="faq-question" key={question}>{`${question}`}</h2>
+      <VscTriangleDown />
+    </div>;
+    let trigger_open = <div className="faq-collapsible">
+      <h2 className="faq-question" key={question}>{`${question}`}</h2>
+      <VscTriangleUp />
+    </div>;
     return ( 
-      <Collapsible trigger={<h2 className="faq-question" key={question}>{`${question}`}</h2>}>
+      <Collapsible trigger={trigger_closed} triggerWhenOpen={trigger_open}>
         {answers}
       </Collapsible>
     );

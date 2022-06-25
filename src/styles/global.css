@@ -146,8 +146,15 @@
     margin: 0 auto;
   }
 
-  .faq-question {
+  .faq-collapsible {
     @apply bg-sand py-1 px-3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.375em;
+  }
+
+  .faq-question {
     font-size: 1em;
   }
 
@@ -157,23 +164,23 @@
 
   .footer {
     position: relative;
-    margin-top: 50px;
+    margin-top: 5%;
   }
 
   .footer-content {
     position: absolute;
-    bottom: 50px;
-    left: 80px;
+    bottom: 10%;
+    left: 5%;
   }
 
-  @media screen and (min-width: 1442px) {
+  @media screen and (max-width: 1000px) {
     .footer-content {
-      left: calc((100vw - 1442px) / 2 + 80px);
+      font-size: 0.75em;
     }
   }
 
   .footer-img {
-    margin: 0 auto;
+    width: 100vw;
   }
 
   .footer-content a {
@@ -195,6 +202,13 @@
     font-weight: 600;
     font-size: 50px;
     line-height: 45px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .footer-content h1 {
+      font-size: 35px;
+      line-height: 30px;
+    }
   }
 
   .footer-social-media {
