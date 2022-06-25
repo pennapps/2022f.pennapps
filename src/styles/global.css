@@ -70,6 +70,11 @@
     font-family: futura-pt, sans-serif;
   }
 
+  .nav-pennapps {
+    @apply font-bold text-2xl;
+    font-family: futura-pt, sans-serif;
+  }
+
   h2 {
     @apply font-bold text-2xl text-green mb-1.5;
     font-family: futura-pt, sans-serif;
@@ -86,7 +91,7 @@
   }
 
   p {
-    @apply font-normal text-green mb-1.5;
+    @apply font-normal text-green mb-2;
     font-family: proxima-nova, sans-serif;
     font-size: 1.0em;
   }
@@ -127,17 +132,13 @@
   }
 
   nav {
-    @apply text-green bg-white px-4;
+    @apply text-green bg-white px-4 py-4;
     font-family: proxima-nova, sans-serif;
     position: fixed;
   }
 
   nav a {
-    text-decoration: none;
-  }
-
-  nav a:hover {
-    text-decoration: underline;
+    @apply no-underline hover:underline;
   }
 
   .mobile-nav {
@@ -164,6 +165,7 @@
 
   .faq-question {
     @apply bg-sand py-1 px-3;
+    font-family: proxima-nova, sans-serif;
     font-size: 1em;
   }
 
