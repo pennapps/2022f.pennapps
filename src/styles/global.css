@@ -119,7 +119,7 @@
 @tailwind components;
 @layer components {
   .heading {
-    @apply px-[15%] md:px-[20%] lg:px-[30%] text-center mb-8 pt-24;
+    @apply px-[15%] md:px-[20%] lg:px-[30%] text-center mb-4 pt-24;
   }
 
   .heading h1{
@@ -130,7 +130,6 @@
     @apply text-green bg-white px-4;
     font-family: proxima-nova, sans-serif;
     position: fixed;
-    top: 0;
   }
 
   nav a {
@@ -141,9 +140,26 @@
     text-decoration: underline;
   }
 
+  .mobile-nav {
+    @apply bg-white;
+  }
+
+  .mobile-nav a {
+    @apply py-4 px-16 border-b border-r border-l border-gray-200 text-center;
+  }
+
+  .mobile-nav a:hover {
+    @apply bg-honeydew;
+    text-decoration: none;
+  }
+
+  .mobile-nav a:first-child {
+    @apply border-t;
+  }
+
   .section {
-    @apply px-[10%] md:px-[15%] lg:px-[25%] py-3;
-    margin: 0 auto;
+    @apply px-[10%] md:px-[15%] lg:px-[25%] pt-12;
+    margin-bottom: -0.5rem;
   }
 
   .faq-collapsible {
