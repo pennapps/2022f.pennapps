@@ -126,7 +126,6 @@
   nav {
     @apply text-green bg-white px-4 py-4;
     font-family: proxima-nova, sans-serif;
-    position: fixed;
   }
 
   nav a {
