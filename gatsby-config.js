@@ -1,8 +1,8 @@
 module.exports = {
-  pathPrefix: "/2022f.pennapps",
+  pathPrefix: "/",
   siteMetadata: {
     title: `2022f.pennapps`,
-    siteUrl: `https://www.pennapps.github.io/2022f.pennapps/`,
+    siteUrl: `http://2022f.pennapps.com/`,
     favicon: `/static/favicon.ico`
   },
   plugins: ["gatsby-plugin-mdx",
