@@ -62,16 +62,15 @@
       font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
   }
 
+  html {
+    @apply scroll-smooth;
+  }
+
   .tk-proxima-nova { font-family: "proxima-nova",sans-serif; }
   .tk-futura-pt { font-family: "futura-pt",sans-serif; }
 
   h1 {
     @apply font-bold text-3xl text-green mb-5;
-    font-family: futura-pt, sans-serif;
-  }
-
-  .nav-pennapps {
-    @apply font-bold text-2xl;
     font-family: futura-pt, sans-serif;
   }
 
@@ -123,8 +122,16 @@
 
 @tailwind components;
 @layer components {
+  .section {
+    @apply px-[10%] md:px-[15%] lg:px-[25%] pt-12 mb-[-0.5rem];
+  }
+
+  .anchor {
+    @apply relative top-[-100px] invisible
+  }
+
   nav {
-    @apply text-green bg-white px-4 py-4;
+    @apply text-green bg-white px-9 w-full h-20 flex flex-row justify-between items-center top-0 sticky;
     font-family: proxima-nova, sans-serif;
   }
 
@@ -132,26 +139,73 @@
     @apply no-underline hover:underline;
   }
 
+  .nav-pennapps {
+    @apply font-bold text-xl;
+    font-family: futura-pt, sans-serif;
+  }
+
+  .links {
+    @apply flex flex-row space-x-5 md:space-x-11;
+  }
+
   .mobile-nav {
-    @apply bg-white;
+    @apply sm:hidden absolute bg-white top-20 right-0 flex flex-col;
+    @apply overflow-hidden transition-all ease-in-out duration-500;
   }
 
   .mobile-nav a {
-    @apply py-4 px-16 border-b border-r border-l border-gray-200 text-center;
+    @apply py-4 px-16 border-b border-x border-gray-200 text-center;
+    @apply hover:bg-honeydew hover:no-underline;
+    @apply first:border-t;
   }
 
-  .mobile-nav a:hover {
-    @apply bg-honeydew;
-    text-decoration: none;
+  .heading {
+    @apply bg-sand h-[75vh] flex flex-row items-center sm:space-x-12 px-[15%] md:px-[20%] lg:px-[26%];
   }
 
-  .mobile-nav a:first-child {
-    @apply border-t;
+  .heading img {
+    @apply w-28 lg:w-36 h-auto hidden sm:inline;
   }
 
-  .section {
-    @apply px-[10%] md:px-[15%] lg:px-[25%] pt-12;
-    margin-bottom: -0.5rem;
+  .heading h1 {
+    @apply text-green md:text-5xl;
+  }
+
+  .heading p {
+    @apply md:text-lg;
+  }
+
+  .heading button {
+    @apply mt-4 bg-green text-sand px-6 py-2 rounded-full hover:bg-emerald;
+  }
+
+  .landing {
+    @apply h-screen flex flex-col justify-center items-center;
+  }
+
+  .landing-image {
+    @apply w-full sm:w-5/6 md:w-2/3 text-center;
+  }
+
+  .landing-image h2 {
+    @apply md:hidden text-sm relative bottom-6 font-bold;
+  }
+
+  .landing-countdown {
+    @apply flex flex-row sm:space-x-3 space-x-2;
+  }
+
+  .landing-countdown-square {
+    @apply w-[18.9vw] h-[18vw] sm:w-[14.7vw] sm:h-[14vw] md:w-[9.975vw] md:h-[9.5vw] md:min-w-[5.25rem] md:min-h-[5rem];
+    @apply bg-white flex flex-col items-center justify-center;
+  }
+
+  .landing-countdown-square h1 {
+    @apply text-2xl sm:text-3xl;
+  }
+
+  .landing-countdown-square h4 {
+    @apply text-sm sm:text-base;
   }
 
   .faq-question {

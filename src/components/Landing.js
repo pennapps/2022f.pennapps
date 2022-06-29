@@ -30,12 +30,13 @@ function Landing() {
 
   const timeUntil = getTimeUntil()
   return (
-    <div className="h-screen flex flex-col justify-center items-center">
-      <div className="w-2/3 min-w-[32rem]">
+    <div className="landing">
+      <div className="landing-image">
         <img src={bannerWithDate} className="hidden md:inline"/>
         <img src={banner} className="md:hidden"/>
+        <h2>September 2-4, 2022</h2>
       </div>
-      <div className="flex flex-row space-x-3">
+      <div className="landing-countdown">
         <TimeSquare amt={timeUntil.d} unit={"DAYS"}/>
         <TimeSquare amt={timeUntil.h} unit={"HOURS"}/>
         <TimeSquare amt={timeUntil.m} unit={"MINUTES"}/>
@@ -47,7 +48,7 @@ function Landing() {
 
 function TimeSquare(props) {
   return (
-    <div className="w-[10vw] h-[9.5vw] min-w-[5rem] min-h-[4.75rem] bg-white flex flex-col items-center justify-center">
+    <div className="landing-countdown-square">
       <h1 className="mb-0">{props.amt}</h1>
       <h4 className="text-emerald">{props.unit}</h4>
     </div>

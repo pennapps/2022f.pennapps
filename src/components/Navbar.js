@@ -2,15 +2,13 @@ import React, { useState } from 'react'
 import { FaBars } from "@react-icons/all-files/fa/FaBars";
 
 
-const links = ['About', 'Apply', 'Logistics', 'FAQ']
+const links = ['about', 'apply', 'logistics', 'faqs']
 
 function Navbar() {
   return (
-    <nav className="w-full h-12 flex flex-row justify-between items-center top-0 sticky">
-      <a className="nav-pennapps" href="#top">PennApps</a>
-      <div className="flex flex-row space-x-6">
-        <Links links={links}/>
-      </div>
+    <nav>
+      <a className="nav-pennapps" href="#top">PENNAPPS</a>
+      <Links links={links}/>
     </nav>
   )
 }
@@ -20,20 +18,20 @@ function Links(props) {
   const toggleShowMenu = () => setShowMenu(prev => !prev)
 
   return (
-    <>
+    <div className="links">
       {/* shows if screen is not sm */}
       {props.links.map((link, i) => 
-        <a key={i} className="hidden sm:inline bg-white" href={`#${link}`}>{link}</a>)
+        <a key={i} className="hidden sm:inline" href={`#${link}`}>{link.toUpperCase()}</a>)
       }
 
       {/* shows if screen is sm */}
       <button className="sm:hidden"><FaBars size="1.5em" onClick={toggleShowMenu}/></button>
-      <div className={showMenu? "sm:hidden absolute mt-8 top-4 right-0 flex flex-col mobile-nav" : "hidden"}>
+      <div className={`mobile-nav ${showMenu ? "max-h-screen" : "max-h-0"}`}>
         {props.links.map((link, i) => 
-          <a key={i} onClick={toggleShowMenu} href={`#${link}`}>{link}</a> )
+          <a key={i} onClick={toggleShowMenu} href={`#${link}`}>{link.toUpperCase()}</a> )
         }
       </div>
-    </>
+    </div>
   )
 }
 
