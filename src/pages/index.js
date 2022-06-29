@@ -18,7 +18,7 @@ const IndexPage = ({data}) => {
       {
         data.allMdx.nodes.map((node) => (
           node.frontmatter.order 
-          ? node.frontmatter.title === "FAQ" ?
+          ? node.frontmatter.title === "FAQS" ?
               <FAQ content={node.rawBody} id={node.frontmatter.title.toLowerCase()} /> :
               <Section content={node.body} id={node.frontmatter.title.toLowerCase()} />
           : null
