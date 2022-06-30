@@ -3,7 +3,8 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 
 const Section = ({content, id}) => {
   return (
-    <div key={id} id={id} className="section">
+    <div key={id} className="section">
+      <a className="anchor" id={id}/>
       <MDXRenderer>
         {content}
       </MDXRenderer>

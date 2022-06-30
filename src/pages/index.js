@@ -4,21 +4,23 @@ import Navbar from '../components/Navbar'
 import Section from '../components/Section'
 import FAQ from '../components/FAQ'
 import Heading from '../components/Heading';
-import '../styles/index.css'
+// import '../styles/index.css'
 import {graphql} from "gatsby";
+import Landing from '../components/Landing'
 
 // markup
 const IndexPage = ({data}) => {
   return (
     <main id="">
+      <Landing/>
       <Navbar/>
       <Heading/>
       {
         data.allMdx.nodes.map((node) => (
           node.frontmatter.order 
-          ? node.frontmatter.title === "FAQ" ?
-              <FAQ content={node.rawBody} id={node.frontmatter.title} /> :
-              <Section content={node.body} id={node.frontmatter.title} />
+          ? node.frontmatter.title === "FAQS" ?
+              <FAQ content={node.rawBody} id={node.frontmatter.title.toLowerCase()} /> :
+              <Section content={node.body} id={node.frontmatter.title.toLowerCase()} />
           : null
         ))
       }
