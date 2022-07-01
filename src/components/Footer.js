@@ -3,7 +3,6 @@ import { FaFacebook } from "@react-icons/all-files/fa/FaFacebook";
 import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 import footer from "../images/footer.svg";
-import '../styles/index.css'
 
 
 function Footer() {
