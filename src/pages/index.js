@@ -4,7 +4,6 @@ import Navbar from '../components/Navbar'
 import Section from '../components/Section'
 import FAQ from '../components/FAQ'
 import Heading from '../components/Heading';
-// import '../styles/index.css'
 import {graphql} from "gatsby";
 import Landing from '../components/Landing'
 

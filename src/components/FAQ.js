@@ -2,7 +2,6 @@ import * as React from 'react'
 import Collapsible from 'react-collapsible';
 import ReactMarkdown from 'react-markdown'
 import { VscTriangleDown, VscTriangleUp } from "react-icons/vsc"
-import '../styles/index.css'
 
 const FAQ = ({content, id}) => {
   const faqs = content.split("## ").slice(1);

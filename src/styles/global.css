@@ -127,7 +127,7 @@
   }
 
   .anchor {
-    @apply relative top-[-100px] invisible
+    @apply relative top-[-100px] invisible;
   }
 
   nav {
@@ -142,6 +142,18 @@
   .nav-pennapps {
     @apply font-bold text-xl;
     font-family: futura-pt, sans-serif;
+  }
+
+  .navlinks-banner {
+    @apply flex h-full flex-row items-center min-w-[50%] justify-end pl-0;
+  }
+  
+  #mlh-trust-badge {
+    @apply md:px-[8%] lg:px-[4%] pt-20 shrink-0;
+  }
+
+  #mlh-trust-badge img {
+    @apply h-40 w-full;
   }
 
   .links {

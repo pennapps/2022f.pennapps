@@ -5,10 +5,18 @@ import { FaBars } from "@react-icons/all-files/fa/FaBars";
 const links = ['about', 'apply', 'logistics', 'faqs']
 
 function Navbar() {
+  const mlhHref = "https://mlh.io/seasons/2022/events?utm_source=na-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2022-season&amp;utm_content=white";
+  const mlhBadgeSrc = "https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-white.svg";
+
   return (
     <nav>
       <a className="nav-pennapps" href="#top">PENNAPPS</a>
-      <Links links={links}/>
+      <div className="navlinks-banner">
+        <Links links={links}/>
+        <a id="mlh-trust-badge" className="hidden sm:inline" href={mlhHref} target="_blank">
+            <img src={mlhBadgeSrc} alt="Major League Hacking 2022 Hackathon Season" />
+        </a>
+      </div>
     </nav>
   )
 }
