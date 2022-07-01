@@ -8,11 +8,36 @@ import footer from "../images/footer.svg";
 function Footer() {
   return (
     <div className="footer">
-      <div className="footer-content">
-        <div className="flex flex-row space-x-[60px]">
+      <div className="footer-content sm:hidden px-4">
+        <a className="hover:underline" href="mailto:contact@pennapps.com">
+          <p className="text-sand">contact@pennapps.com</p>
+        </a>
+        <div className="flex flex-col space-y-2">
+          <a href="https://facebook.com/pennapps" target="_blank">
+            <div className="footer-social-media">
+              <FaFacebook />
+              <div className="footer-social-media-text">Facebook</div>
+            </div>
+          </a>
+          <a href="https://twitter.com/pennapps" target="_blank">
+            <div className="footer-social-media">
+              <FaTwitter />
+              <div className="footer-social-media-text">Twitter</div>
+            </div>
+          </a>
+          <a href="https://instagram.com/pennapps" target="_blank">
+            <div className="footer-social-media">
+              <FaInstagram />
+              <div className="footer-social-media-text">Instagram</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div className="footer-content sm:flex hidden">
+        <div className="flex flex-row space-x-2">
           <div className="flex flex-col space-y-0">
             <h1>PENN<br/>&nbsp;APPS</h1>
-            <p>&copy; 2021 PennApps</p>
+            <p>&copy; 2022 PennApps</p>
             <a href="mailto: contact@pennapps.com">
               <p>contact@pennapps.com</p>
             </a>

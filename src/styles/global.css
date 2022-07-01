@@ -221,8 +221,7 @@
   }
 
   .faq-collapsible {
-    @apply bg-sand py-1 px-3;
-    display: flex;
+    @apply bg-sand py-1 px-3 flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.375em;
@@ -245,7 +244,7 @@
 
   .footer-content {
     position: absolute;
-    bottom: 10%;
+    bottom: 8%;
     left: 5%;
   }
 
@@ -260,13 +259,9 @@
   }
 
   .footer-content a {
-    @apply text-sand;
+    @apply text-sand hover:underline;
     font-weight: 500;
     text-decoration: none;
-  }
-
-  .footer-content a:hover {
-    text-decoration: underline;
   }
 
   .footer-content p {
