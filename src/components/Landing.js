@@ -55,7 +55,4 @@ function TimeSquare(props) {
   )
 }
 
-
-
-
 export default Landing

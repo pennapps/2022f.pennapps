@@ -7,9 +7,9 @@ function Heading() {
   return (
     <div className="heading">
         <img src={image}/>
-        <div>
+        <div className="md:py-[15%]">
           <Header/>
-          <a href="#Apply"><button>APPLY</button></a>
+          <a href="http://apply.pennapps.com" target="_blank"><button>APPLY</button></a>
         </div>
     </div>
   )

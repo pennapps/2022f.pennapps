@@ -12,7 +12,7 @@ function Footer() {
         <a className="hover:underline" href="mailto:contact@pennapps.com">
           <p className="text-sand">contact@pennapps.com</p>
         </a>
-        <div className="flex flex-col space-y-2">
+        <div className="flex flex-row space-x-2">
           <a href="https://facebook.com/pennapps" target="_blank">
             <div className="footer-social-media">
               <FaFacebook />

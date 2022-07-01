@@ -172,7 +172,7 @@
   }
 
   .heading {
-    @apply bg-sand h-[75vh] flex flex-row items-center sm:space-x-12 px-[15%] md:px-[20%] lg:px-[26%];
+    @apply bg-sand min-h-[75vh] flex flex-row items-center sm:space-x-12 px-[15%] md:px-[20%] lg:px-[26%];
   }
 
   .heading img {
@@ -221,16 +221,14 @@
   }
 
   .faq-collapsible {
-    @apply bg-sand py-1 px-3 flex;
+    @apply bg-sand py-2 px-3 mb-1 flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.375em;
-    padding-bottom: 0;
   }
 
   .faq-question {
+    @apply text-base;
     font-family: proxima-nova, sans-serif;
-    font-size: 1em;
   }
 
   .faq-answer {
