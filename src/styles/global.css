@@ -245,8 +245,14 @@
 
   .footer-content {
     position: absolute;
-    bottom: 10%;
+    bottom: 8%;
     left: 5%;
+    width: 90%;
+  }
+
+  .footer-content-layout {
+    display: flex;
+    justify-content: space-between;
   }
 
   @media screen and (max-width: 1000px) {
@@ -294,6 +300,74 @@
 
   .footer-social-media-text {
     margin-left: 10px;
+  }
+
+  .footer-penn-logo {
+    margin-left: -5px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .footer-penn-logo {
+      width: 175px;
+    }
+  }
+
+  @media screen and (max-width: 785px) {
+    .footer-mobile {
+      display: block;
+    }
+    .footer {
+      display: none;
+    }
+    .footer-content h1 {
+      font-size: 25px;
+      line-height: 25px;
+      margin-bottom: 10px;
+    }
+    .footer-content a {
+      font-weight: 400;
+    }
+    .footer-penn-logo {
+      width: 100px;
+    }
+  }
+
+  .footer-mobile {
+    position: relative;
+    margin-top: 5%;
+  }
+
+  .footer-social-media-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-img-mobile {
+    width: 100vw;
+    display: none;
+  }
+
+  @media screen and (max-width: 640px) {
+    .footer-img {
+      display: none;
+    }
+    .footer-img-mobile {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .footer-content {
+      bottom: 7%;
+    }
+    .footer-content h1 {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 7px;
+    }
+    .footer-content {
+      font-size: 0.6rem;
+    }
   }
 }
 
