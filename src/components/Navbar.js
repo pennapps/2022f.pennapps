@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FaBars } from "@react-icons/all-files/fa/FaBars";
 
 
-const links = ['about', 'apply', 'logistics', 'faqs']
+const links = ['about', 'apply', 'logistics', 'faqs', 'sponsors']
 
 function Navbar() {
   const mlhHref = "https://mlh.io/seasons/2022/events?utm_source=na-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2022-season&amp;utm_content=white";

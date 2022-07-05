@@ -1,6 +1,7 @@
+@import url("https://p.typekit.net/p.css?s=1&k=tri7gwo&ht=tk&f=139.140.173.174.175.176.10881.10882.10884.10885&a=21288430&app=typekit&e=css");
+
 @tailwind base;
 @layer base {
-  @import url("https://p.typekit.net/p.css?s=1&k=tri7gwo&ht=tk&f=139.140.173.174.175.176.10881.10882.10884.10885&a=21288430&app=typekit&e=css");
 
   @font-face {
       font-family:"proxima-nova";
@@ -236,6 +237,13 @@
 
   .faq-answer {
     @apply px-5 pb-0.5;
+  }
+
+  .sponsor-logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
   }
 
   .footer {

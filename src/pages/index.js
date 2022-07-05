@@ -6,6 +6,7 @@ import FAQ from '../components/FAQ'
 import Heading from '../components/Heading';
 import {graphql} from "gatsby";
 import Landing from '../components/Landing'
+import Sponsors from "../components/Sponsors";
 
 // markup
 const IndexPage = ({data}) => {
@@ -23,6 +24,7 @@ const IndexPage = ({data}) => {
           : null
         ))
       }
+      <Sponsors/>
       <Footer/>
     </main>
   )
