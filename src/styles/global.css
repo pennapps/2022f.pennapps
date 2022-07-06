@@ -131,7 +131,7 @@
   }
 
   nav {
-    @apply text-green bg-white px-9 w-full h-20 flex flex-row justify-between items-center top-0 sticky;
+    @apply text-green bg-white px-9 w-full h-20 flex flex-row justify-between items-center top-0 sticky z-10;
     font-family: proxima-nova, sans-serif;
   }
 
