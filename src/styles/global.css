@@ -246,6 +246,18 @@
     @apply h-[45%] flex items-center justify-center;
   }
 
+  .about-row {
+    @apply flex flex-col sm:flex-row mb-4;
+  }
+
+  .about-row img {
+    @apply w-36 p-4 md:min-w-[12rem] md:max-h-[20rem] lg:max-w-xs lg:p-8 self-center md:mr-4;
+  }
+
+  .about-paragraph {
+    @apply flex flex-col lg:w-[75%] md:w-[60%];
+  }
+
   .faq-collapsible {
     @apply bg-sand py-1 px-3;
     display: flex;
@@ -271,8 +283,14 @@
 
   .footer-content {
     position: absolute;
-    bottom: 10%;
+    bottom: 8%;
     left: 5%;
+    width: 90%;
+  }
+
+  .footer-content-layout {
+    display: flex;
+    justify-content: space-between;
   }
 
   @media screen and (max-width: 1000px) {
@@ -320,6 +338,74 @@
 
   .footer-social-media-text {
     margin-left: 10px;
+  }
+
+  .footer-penn-logo {
+    margin-left: -5px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .footer-penn-logo {
+      width: 175px;
+    }
+  }
+
+  @media screen and (max-width: 785px) {
+    .footer-mobile {
+      display: block;
+    }
+    .footer {
+      display: none;
+    }
+    .footer-content h1 {
+      font-size: 25px;
+      line-height: 25px;
+      margin-bottom: 10px;
+    }
+    .footer-content a {
+      font-weight: 400;
+    }
+    .footer-penn-logo {
+      width: 100px;
+    }
+  }
+
+  .footer-mobile {
+    position: relative;
+    margin-top: 5%;
+  }
+
+  .footer-social-media-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-img-mobile {
+    width: 100vw;
+    display: none;
+  }
+
+  @media screen and (max-width: 640px) {
+    .footer-img {
+      display: none;
+    }
+    .footer-img-mobile {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .footer-content {
+      bottom: 7%;
+    }
+    .footer-content h1 {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 7px;
+    }
+    .footer-content {
+      font-size: 0.6rem;
+    }
   }
 }
 
