@@ -129,16 +129,16 @@
   .anchor {
     @apply relative top-[-100px] invisible;
   }
-
+  
   nav {
     @apply text-green bg-white px-9 w-full h-20 flex flex-row justify-between items-center top-0 sticky z-10;
     font-family: proxima-nova, sans-serif;
   }
-
+  
   nav a {
     @apply no-underline hover:underline;
   }
-
+  
   .nav-pennapps {
     @apply font-bold text-xl;
     font-family: futura-pt, sans-serif;
@@ -218,6 +218,32 @@
 
   .landing-countdown-square h4 {
     @apply text-sm sm:text-base;
+  }
+
+  .logistics-background {
+    @apply w-screen min-h-[50rem] object-cover;
+  }
+
+  .logistics-anchor {
+    @apply relative top-[-200px] invisible; 
+  }
+
+  .logistics-body {
+    @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%];
+    @apply bg-linen rounded-lg w-[80%] md:w-[40rem] px-14 py-10;
+  }
+
+  .logistics-icons {
+    @apply flex flex-row space-x-4 pt-4;
+  }
+
+  .logistics-icon-square {
+    @apply flex flex-col items-center justify-center;
+    @apply bg-emerald bg-opacity-10 w-[11.5vw] h-[11vw] min-w-[7rem] min-h-[7rem] rounded-lg;
+  }
+
+  .logistics-icon-square-container {
+    @apply h-[45%] flex items-center justify-center;
   }
 
   .faq-collapsible {
