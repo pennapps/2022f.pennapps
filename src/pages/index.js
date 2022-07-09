@@ -1,4 +1,5 @@
 import * as React from 'react'
+import {graphql} from "gatsby";
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Section from '../components/Section'
@@ -6,7 +7,6 @@ import FAQ from '../components/FAQ'
 import Heading from '../components/Heading';
 import Landing from '../components/Landing';
 import About from '../components/About';
-import {graphql} from "gatsby";
 import Sponsors from "../components/Sponsors";
 
 // markup
