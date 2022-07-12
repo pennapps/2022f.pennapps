@@ -4,8 +4,9 @@ import Navbar from '../components/Navbar'
 import Section from '../components/Section'
 import FAQ from '../components/FAQ'
 import Heading from '../components/Heading';
+import Landing from '../components/Landing';
+import About from '../components/About';
 import {graphql} from "gatsby";
-import Landing from '../components/Landing'
 import Logistics from '../components/Logistics'
 
 // markup
@@ -20,6 +21,8 @@ const IndexPage = ({data}) => {
           node.frontmatter.order 
           ? node.frontmatter.title === "FAQS" ?
               <FAQ content={node.rawBody} id={node.frontmatter.title.toLowerCase()} /> :
+            node.frontmatter.title === "About" ? 
+                <About content={node.rawBody} id={node.frontmatter.title.toLowerCase()} /> :  
             node.frontmatter.title === 'Logistics' ? 
               <Logistics/> :
               <Section content={node.body} id={node.frontmatter.title.toLowerCase()} />
