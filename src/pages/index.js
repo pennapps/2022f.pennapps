@@ -7,6 +7,7 @@ import Heading from '../components/Heading';
 import Landing from '../components/Landing';
 import About from '../components/About';
 import {graphql} from "gatsby";
+import Logistics from '../components/Logistics'
 
 // markup
 const IndexPage = ({data}) => {
@@ -18,13 +19,14 @@ const IndexPage = ({data}) => {
       {
         data.allMdx.nodes.map((node) => (
           node.frontmatter.order 
-          ? (
+          ? node.frontmatter.title === "FAQS" ?
+              <FAQ content={node.rawBody} id={node.frontmatter.title.toLowerCase()} /> :
             node.frontmatter.title === "About" ? 
                 <About content={node.rawBody} id={node.frontmatter.title.toLowerCase()} /> :  
-            node.frontmatter.title === "FAQS" ? 
-                <FAQ content={node.rawBody} id={node.frontmatter.title.toLowerCase()} /> :
-              <Section content={node.body} id={node.frontmatter.title.toLowerCase()} /> 
-          ) : null
+            node.frontmatter.title === 'Logistics' ? 
+              <Logistics/> :
+              <Section content={node.body} id={node.frontmatter.title.toLowerCase()} />
+          : null
         ))
       }
       <Footer/>
