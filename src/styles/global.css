@@ -240,6 +240,8 @@
   .logistics-icon-square {
     @apply flex flex-col items-center justify-center;
     @apply bg-emerald bg-opacity-10 w-[11.5vw] h-[11vw] min-w-[7rem] min-h-[7rem] rounded-lg;
+    @apply font-semibold text-green tracking-wide;
+    font-family: proxima-nova, sans-serif;
   }
 
   .logistics-icon-square-container {
