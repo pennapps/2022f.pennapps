@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Section from '../components/Section'
@@ -11,8 +12,23 @@ import Logistics from '../components/Logistics'
 
 // markup
 const IndexPage = ({data}) => {
+  const [hasScrolled, setHasScrolled] = useState(false);
+  // TODO: cleanup logic
+  const scrollDown = () => {
+    if (!hasScrolled && window.pageYOffset < 2) {
+      setTimeout(() => {
+        if (window.pageYOffset < 2) {
+          window.scrollBy(0, window.innerHeight);
+        }
+      }, 5000);
+      setHasScrolled(true);
+    } else {
+      setHasScrolled(false);
+    }
+  }
+
   return (
-    <main id="">
+    <main id="" onLoad={scrollDown}>
       <Landing/>
       <Navbar/>
       <Heading/>
@@ -33,6 +49,8 @@ const IndexPage = ({data}) => {
     </main>
   )
 }
+
+
 
 export const query = graphql`query {
   allMdx(sort: {fields: frontmatter___order, order: ASC}) {

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import bannerWithDate from '../images/PennAppsF22_BannerWithDate.png'
 import banner from '../images/PennAppsF22_Banner.png'
+import landingBg from '../images/landing_bg.png'
 // import square from '../images/PennAppsF22_SquareLogo.png'
+import { VscFoldDown } from "react-icons/vsc"
 
 const target = new Date("September 2 2022 17:00:00 EST") //1 hour difference bc of daylight savings so 17:00 => 18:00
 
@@ -29,6 +31,11 @@ function Landing() {
   }
 
   const timeUntil = getTimeUntil()
+
+  const scrollDown = () => {
+    window.scrollBy(0, window.innerHeight);
+  }
+
   return (
     <div className="landing">
       <div className="landing-image">
@@ -36,12 +43,14 @@ function Landing() {
         <img src={banner} className="md:hidden"/>
         <h2>September 2-4, 2022</h2>
       </div>
-      <div className="landing-countdown">
+      <div className="landing-countdown lg:pb-56">
         <TimeSquare amt={timeUntil.d} unit={"DAYS"}/>
         <TimeSquare amt={timeUntil.h} unit={"HOURS"}/>
         <TimeSquare amt={timeUntil.m} unit={"MINUTES"}/>
         <TimeSquare amt={timeUntil.s} unit={"SECONDS"}/>
       </div>
+      <VscFoldDown className="landing-chevron" onClick={scrollDown} />
+      <img src={landingBg} className="w-full absolute bottom-0" />
     </div>
   )
 }
@@ -54,8 +63,5 @@ function TimeSquare(props) {
     </div>
   )
 }
-
-
-
 
 export default Landing
