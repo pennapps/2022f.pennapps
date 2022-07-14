@@ -19,7 +19,7 @@ const About = ({content, id}) => {
   );
   
   return (
-    <div className="section" key={id}>
+    <div className="section" key={id} id={id}>
         <ReactMarkdown>{lines[0]}</ReactMarkdown>
         {paragraphs}
     </div>
