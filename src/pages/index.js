@@ -27,10 +27,14 @@ const IndexPage = ({data}) => {
     }
   }
 
-  const aboutContent = data.allMdx.nodes.filter(node => node.frontmatter.title === "About")[0]
-  const applyContent = data.allMdx.nodes.filter(node => node.frontmatter.title === "Apply")[0]
-  const logisticsContent = data.allMdx.nodes.filter(node => node.frontmatter.title === "Logistics")[0]
-  const faqContent = data.allMdx.nodes.filter(node => node.frontmatter.title === "FAQs")[0]
+  const getSectionContent = (title) => {
+    return data.allMdx.nodes.filter(node => node.frontmatter.title === title)[0]
+  }
+
+  const aboutContent = getSectionContent("About")
+  const applyContent = getSectionContent("Apply")
+  const logisticsContent = getSectionContent("Logistics")
+  const faqContent = getSectionContent("FAQs")
 
   return (
     <main id="" onLoad={scrollDown}>
