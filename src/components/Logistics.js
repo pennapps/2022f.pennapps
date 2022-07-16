@@ -1,19 +1,21 @@
 import React from 'react'
-import LogisticsMDX from '../../content/logistics.mdx'
 import background from '../images/LogisticsBackground.png'
 import mobileBackground from '../images/logistics_bg_mobile.png'
 import PrizesIcon from '../images/PrizesIcon.png'
 import ScheduleIcon from '../images/ScheduleIcon.png'
+import {MDXRenderer} from "gatsby-plugin-mdx";
 
 
-function Logistics() {
+function Logistics({content}) {
   return (
     <div key="logistics" className="relative mt-16">
       <img src={background} className="logistics-background hidden md:inline"/>
       <img src={mobileBackground} className="logistics-background md:hidden"/>
       <div className="logistics-body">
         <a className="logistics-anchor" id="logistics"/>
-        <LogisticsMDX/>
+        <MDXRenderer>
+          {content}
+        </MDXRenderer>
         <div className="logistics-icons">
           <IconSquare name={"SCHEDULE"} src={ScheduleIcon}/>
           <IconSquare name={"PRIZES"} src={PrizesIcon}/>
