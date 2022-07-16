@@ -27,36 +27,29 @@ const IndexPage = ({data}) => {
     }
   }
 
+  const aboutContent = data.allMdx.nodes.filter(node => node.frontmatter.title === "About")[0]
+  const applyContent = data.allMdx.nodes.filter(node => node.frontmatter.title === "Apply")[0]
+  const logisticsContent = data.allMdx.nodes.filter(node => node.frontmatter.title === "Logistics")[0]
+  const faqContent = data.allMdx.nodes.filter(node => node.frontmatter.title === "FAQs")[0]
+
   return (
     <main id="" onLoad={scrollDown}>
       <Landing/>
       <Navbar/>
       <Heading/>
-      {
-        data.allMdx.nodes.map((node) => (
-          node.frontmatter.order 
-          ? node.frontmatter.title === "FAQS" ?
-              <FAQ content={node.rawBody} id={node.frontmatter.title.toLowerCase()} /> :
-            node.frontmatter.title === "About" ? 
-                <About content={node.rawBody} id={node.frontmatter.title.toLowerCase()} /> :  
-            node.frontmatter.title === 'Logistics' ? 
-              <Logistics/> :
-              <Section content={node.body} id={node.frontmatter.title.toLowerCase()} />
-          : null
-        ))
-      }
+      <About content={aboutContent.rawBody} />
+      <Section content={applyContent.body} id="apply" />
+      <Logistics content={logisticsContent.body}/>
+      <FAQ content={faqContent.rawBody} />
       <Footer/>
     </main>
   )
 }
 
-
-
 export const query = graphql`query {
-  allMdx(sort: {fields: frontmatter___order, order: ASC}) {
+  allMdx {
     nodes {
       frontmatter {
-        order
         title
       }
       body
