@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import bannerWithDate from '../images/PennAppsF22_BannerWithDate.png'
+import bannerThemed from '../images/PennAppsF22_BannerThemed.png'
 import banner from '../images/PennAppsF22_Banner.png'
 import landingBg from '../images/landing_bg.png'
 // import square from '../images/PennAppsF22_SquareLogo.png'
@@ -39,7 +39,7 @@ function Landing() {
   return (
     <div className="landing">
       <div className="landing-image">
-        <img src={bannerWithDate} className="hidden md:inline"/>
+        <img src={bannerThemed} className="hidden md:inline"/>
         <img src={banner} className="md:hidden"/>
         <h2>September 2-4, 2022</h2>
       </div>
@@ -50,7 +50,7 @@ function Landing() {
         <TimeSquare amt={timeUntil.s} unit={"SECONDS"}/>
       </div>
       <VscFoldDown className="landing-chevron" onClick={scrollDown} />
-      <img src={landingBg} className="w-full absolute bottom-0" />
+      <img src={landingBg} className="w-full absolute bottom-0 hidden md:inline" />
     </div>
   )
 }
