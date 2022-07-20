@@ -4,7 +4,7 @@ import caImg from '../images/CampusAmbassadors.png';
 import hackImg from '../images/CollegeHackathon.png';
 import paDiffImg from '../images/PennAppsDifference.png';
 
-const About = ({content, id}) => {
+const About = ({content}) => {
   const lines = content.split("\n\n").slice(1);
   const images = [hackImg, paDiffImg, caImg];
 
@@ -19,9 +19,12 @@ const About = ({content, id}) => {
   );
   
   return (
-    <div className="section" key={id} id={id}>
-        <ReactMarkdown>{lines[0]}</ReactMarkdown>
-        {paragraphs}
+    <div>
+        <a className="anchor" id="about"/>
+        <div className="section" key="about" id="about">
+            <ReactMarkdown>{lines[0]}</ReactMarkdown>
+            {paragraphs}
+        </div>
     </div>
   );
 };

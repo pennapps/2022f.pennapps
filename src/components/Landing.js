@@ -41,6 +41,7 @@ function Landing() {
       <div className="landing-image">
         <img src={bannerThemed} className="hidden md:inline"/>
         <img src={banner} className="md:hidden"/>
+        <h2>Sustainability</h2>
         <h2>September 2-4, 2022</h2>
       </div>
       <div className="landing-countdown lg:pb-56">
