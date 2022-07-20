@@ -12,21 +12,6 @@ import Logistics from '../components/Logistics'
 
 // markup
 const IndexPage = ({data}) => {
-  const [hasScrolled, setHasScrolled] = useState(false);
-  // TODO: cleanup logic
-  const scrollDown = () => {
-    if (!hasScrolled && window.pageYOffset < 2) {
-      setTimeout(() => {
-        if (window.pageYOffset < 2) {
-          window.scrollBy(0, window.innerHeight);
-        }
-      }, 5000);
-      setHasScrolled(true);
-    } else {
-      setHasScrolled(false);
-    }
-  }
-
   const getSectionContent = (title) => {
     return data.allMdx.nodes.filter(node => node.frontmatter.title === title)[0]
   }
@@ -37,7 +22,7 @@ const IndexPage = ({data}) => {
   const faqContent = getSectionContent("FAQs")
 
   return (
-    <main id="" onLoad={scrollDown}>
+    <main id="">
       <Landing/>
       <Navbar/>
       <Heading/>
