@@ -3,7 +3,7 @@ import Collapsible from 'react-collapsible';
 import ReactMarkdown from 'react-markdown'
 import { VscTriangleDown, VscTriangleUp } from "react-icons/vsc"
 
-const FAQ = ({content, id}) => {
+const FAQ = ({content}) => {
   const faqs = content.split("## ").slice(1);
   const output = faqs.map((faq) => {
     let tokens = faq.split("\n");
@@ -34,7 +34,8 @@ const FAQ = ({content, id}) => {
   });
 
   return (
-    <div id={id} key={id} className="section">
+    <div key="faqs" className="section">
+        <a className="anchor" id="faqs"/>
         <h1>FAQ</h1>
         <ReactMarkdown>We know you have a lot of questions, so check below for some of the most common answers. If you have other questions, drop us a line at [contact@pennapps.com](mailto:contact@pennapps.com).</ReactMarkdown>
         {output}

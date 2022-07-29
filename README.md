@@ -2,7 +2,7 @@
 
 ## 🌱 About
 
-This is the iteration site for PennApps XXIII – our fall 2022 hackathon!
+This is the iteration site for PennApps XXIII – our sustainability-themed hackathon coming this fall!
 
 ## 🚀 Quick start
 
@@ -38,3 +38,12 @@ This is the iteration site for PennApps XXIII – our fall 2022 hackathon!
 4. **Deployment (for PennApps dev)**
 
     To deploy, run `gatsby clean` followed by `npm run deploy` on the main branch. That's all.
+
+## 🧑‍💻 Developer acknowledgements
+
+Thank you to our hardworking dev team for their work on this website!
+
+* [@vcai122](https://github.com/vcai122)
+* [@jqu-16](https://github.com/jqu-16)
+* [@fyy26](https://github.com/fyy26)
+* [@audrey-yang](https://github.com/audrey-yang)
