@@ -1,8 +1,9 @@
 import React from 'react'
 
-import bloomberg from '../../static/sponsors/Bloomberg.png'
-import acv from '../../static/sponsors/acv.png'
-import citadel from '../../static/sponsors/citadel.png'
+import janeStreet from '../../static/sponsors/2022-jane-street.png'
+import locket from '../../static/sponsors/2022-locket.png'
+import scm from '../../static/sponsors/2022-scm.png'
+import sonr from '../../static/sponsors/2022-sonr.png'
 
 function Sponsors() {
   return (
@@ -10,9 +11,10 @@ function Sponsors() {
       <a className="anchor" id="sponsors"/>
       <h1>Sponsors</h1>
       <div className="sponsor-logo-container">
-        <img src={bloomberg} alt="Bloomberg" width="100%"/>
-        <img src={acv} alt="ACV" width="30%"/>
-        <img src={citadel} alt="Citadel" width="65%"/>
+        <img src={scm} alt="Stevens Capital Management" width="20%"/>
+        <img src={janeStreet} alt="Jane Street" width="75%"/>
+        <img src={sonr} alt="Sonr" width="40%"/>
+        <img src={locket} alt="Locket" width="55%"/>
       </div>
     </div>
   )
