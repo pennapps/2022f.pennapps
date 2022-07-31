@@ -296,6 +296,22 @@
     gap: 20px;
   }
 
+  #scm {
+    width: 20%
+  }
+
+  #jane-street {
+    width: 75%
+  }
+
+  #sonr {
+    width: 40%
+  }
+
+  #locket {
+    width: 55%
+  }
+
   .footer {
     position: relative;
     margin-top: 5%;
