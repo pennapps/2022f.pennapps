@@ -32,6 +32,11 @@ function Sponsors() {
             <img src={locket} alt="Locket"/>
           </a>
         </div>
+        <div id="bloomberg">
+          <a href="https://www.bloomberg.com/company/?utm_source=bloomberg-menu&utm_medium=bcom">
+            <img src={bloomberg} alt="Bloomberg"/>
+          </a>
+        </div>
       </div>
     </div>
   )
