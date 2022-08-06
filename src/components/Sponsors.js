@@ -4,6 +4,7 @@ import janeStreet from '../../static/sponsors/2022-jane-street.png'
 import locket from '../../static/sponsors/2022-locket.png'
 import scm from '../../static/sponsors/2022-scm.png'
 import sonr from '../../static/sponsors/2022-sonr.png'
+import bloomberg from '../../static/sponsors/2022-bloomberg.png'
 
 function Sponsors() {
   return (
