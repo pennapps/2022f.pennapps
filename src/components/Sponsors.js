@@ -12,10 +12,26 @@ function Sponsors() {
       <a className="anchor" id="sponsors"/>
       <h1>Sponsors</h1>
       <div className="sponsor-logo-container">
-        <img src={scm} alt="Stevens Capital Management" width="20%"/>
-        <img src={janeStreet} alt="Jane Street" width="75%"/>
-        <img src={sonr} alt="Sonr" width="40%"/>
-        <img src={locket} alt="Locket" width="55%"/>
+        <div id="scm">
+          <a href="https://www.scm-lp.com/">
+            <img src={scm} alt="Stevens Capital Management"/>
+          </a>
+        </div>
+        <div id="jane-street">
+          <a href="https://www.janestreet.com/">
+            <img src={janeStreet} alt="Jane Street"/>
+          </a>
+        </div>
+        <div id="sonr">
+          <a href="https://www.sonr.io/">
+            <img src={sonr} alt="Sonr"/>
+          </a>
+        </div>
+        <div id="locket">
+          <a href="https://apps.apple.com/app/id1600525061">
+            <img src={locket} alt="Locket"/>
+          </a>
+        </div>
       </div>
     </div>
   )
