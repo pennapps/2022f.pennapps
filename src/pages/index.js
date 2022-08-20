@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { useState } from 'react'
 import {graphql} from "gatsby";
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'

@@ -80,9 +80,13 @@
     font-family: futura-pt, sans-serif;
   }
 
-  h3 {
+  h3, th {
     @apply font-normal text-xl text-green mb-1.5;
     font-family: futura-pt, sans-serif;
+  }
+
+  th {
+    @apply text-left font-bold;
   }
 
   h4 {
@@ -90,10 +94,18 @@
     font-family: futura-pt, sans-serif;
   }
 
-  p {
+  p, td {
     @apply font-normal text-green mb-2;
     font-family: proxima-nova, sans-serif;
     font-size: 1.0em;
+  }
+
+  td {
+    @apply justify-self-start;
+  }
+
+  tr {
+    @apply hover:bg-honeydew mb-4;
   }
 
   a {
@@ -114,6 +126,10 @@
     font-family: proxima-nova, sans-serif;
     font-size: 1.3em;
     padding: 10px
+  }
+
+  hr {
+    @apply my-8;
   }
 
   main {
@@ -257,6 +273,11 @@
 
   .logistics-icon-square-container {
     @apply h-[45%] flex items-center justify-center;
+  }
+
+  .schedule {
+    @apply absolute bg-linen w-full flex flex-col justify-center sm:mt-16 mt-20;
+    padding: 2%;
   }
 
   .about-row {

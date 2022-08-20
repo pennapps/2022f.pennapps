@@ -9,7 +9,7 @@ function Heading() {
         <img src={image}/>
         <div>
           <Header/>
-          <a href="http://apply.pennapps.com" target="_blank"><button>APPLY</button></a>
+          <a href="#apply"><button>APPLY</button></a>
         </div>
     </div>
   )
