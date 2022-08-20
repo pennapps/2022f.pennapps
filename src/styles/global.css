@@ -86,7 +86,7 @@
   }
 
   th {
-    @apply text-left;
+    @apply text-left font-bold;
   }
 
   h4 {
@@ -100,8 +100,12 @@
     font-size: 1.0em;
   }
 
+  td {
+    @apply justify-self-start;
+  }
+
   tr {
-    @apply hover:bg-white mb-4;
+    @apply hover:bg-honeydew mb-4;
   }
 
   a {
@@ -122,6 +126,10 @@
     font-family: proxima-nova, sans-serif;
     font-size: 1.3em;
     padding: 10px
+  }
+
+  hr {
+    @apply my-8;
   }
 
   main {
@@ -267,8 +275,8 @@
     @apply h-[45%] flex items-center justify-center;
   }
 
-  .schedule-popup {
-    @apply absolute z-[1] bg-honeydew w-full flex flex-col justify-center;
+  .schedule {
+    @apply absolute bg-linen w-full flex flex-col justify-center sm:mt-16 mt-20;
     padding: 2%;
   }
 
