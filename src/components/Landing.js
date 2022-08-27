@@ -5,7 +5,7 @@ import landingBg from '../images/landing_bg.png'
 // import square from '../images/PennAppsF22_SquareLogo.png'
 import { VscFoldDown } from "react-icons/vsc"
 
-const target = new Date("September 2 2022 17:00:00 EST") //1 hour difference bc of daylight savings so 17:00 => 18:00
+const target = new Date("September 2 2022 11:00:00 EST") //1 hour difference bc of daylight savings so 11:00 => 12:00
 
 function Landing() {
   const [mSecUntil, setMSecUntil] = useState(target - Date.now())
