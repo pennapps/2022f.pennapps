@@ -317,24 +317,47 @@
     gap: 20px;
   }
 
-  #scm {
-    width: 20%
+  #polygon {
+    width: 30%
   }
 
-  #jane-street {
-    width: 75%
-  }
-
-  #sonr {
-    width: 40%
-  }
-
-  #locket {
-    width: 55%
+  #meta {
+    width: 30%
   }
 
   #bloomberg {
-    width: 44%
+    width: 30%
+  }
+
+  #sonr {
+    width: 30%
+  }
+
+  #convex {
+    width: 30%;
+    padding-top: 1.5%
+  }
+
+  #twilio {
+    width: 30%
+  }
+
+  #jane-street {
+    width: 25%;
+    padding-top: 1.5%
+  }
+
+  #elastic {
+    width: 25%
+  }
+
+  #locket {
+    width: 25%;
+    padding-top: 1%
+  }
+
+  #scm {
+    width: 10%
   }
 
   .footer {
