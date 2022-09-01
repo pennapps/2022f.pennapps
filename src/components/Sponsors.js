@@ -10,6 +10,8 @@ import janeStreet from '../../static/sponsors/2022-jane-street.png'
 import elastic from '../../static/sponsors/2022-elastic.png'
 import locket from '../../static/sponsors/2022-locket.png'
 import scm from '../../static/sponsors/2022-scm.jpg'
+import hrt from '../../static/sponsors/2022-hrt.png'
+import shippy from '../../static/sponsors/2022-shippy.png'
 
 function Sponsors() {
   return (
@@ -65,6 +67,16 @@ function Sponsors() {
         <div id="scm">
           <a href="https://www.scm-lp.com/">
             <img src={scm} alt="Stevens Capital Management"/>
+          </a>
+        </div>
+        <div id="hrt">
+          <a href="https://www.hudsonrivertrading.com/campus-recruiting/">
+            <img src={hrt} alt="Hudson River Trading"/>
+          </a>
+        </div>
+        <div id="shippy">
+          <a href="https://getshippy.com/">
+            <img src={shippy} alt="Shippy"/>
           </a>
         </div>
       </div>
