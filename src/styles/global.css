@@ -343,21 +343,29 @@
   }
 
   #jane-street {
-    width: 25%;
+    width: 30%;
     padding-top: 1.5%
   }
 
   #elastic {
-    width: 25%
+    width: 30%
   }
 
   #locket {
-    width: 25%;
-    padding-top: 1%
+    width: 30%;
+    padding-top: 1.2%
   }
 
   #scm {
-    width: 10%
+    width: 12%
+  }
+
+  #hrt {
+    width: 14%
+  }
+
+  #shippy {
+    width: 14%
   }
 
   .footer {
