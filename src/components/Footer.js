@@ -16,7 +16,7 @@ function Footer() {
             <div className="flex flex-row space-x-[60px]">
               <div className="flex flex-col space-y-0">
                 <h1>PENN<br/>&nbsp;APPS</h1>
-                <p>&copy; 2021 PennApps</p>
+                <p>&copy; 2022 PennApps</p>
                 <a href="mailto: contact@pennapps.com">
                   <p>contact@pennapps.com</p>
                 </a>
@@ -59,7 +59,7 @@ function Footer() {
           <div className="footer-content-layout">
             <div className="flex flex-col space-y-0">
               <h1>PENN<br/>&nbsp;APPS</h1>
-              <p>&copy; 2021 PennApps</p>
+              <p>&copy; 2022 PennApps</p>
               <a href="mailto: contact@pennapps.com">
                 <p>contact@pennapps.com</p>
               </a>
