@@ -20,13 +20,19 @@ function Landing() {
 
   const getTimeUntil = () => {
     let timeUntil = mSecUntil
-    const d = Math.floor(timeUntil / (1000 * 60 * 60 * 24))
+    let d = Math.floor(timeUntil / (1000 * 60 * 60 * 24));
     timeUntil -= d * 1000 * 60 * 60 * 24
-    const h = Math.floor(timeUntil / (1000 * 60 * 60))
+    let h = Math.floor(timeUntil / (1000 * 60 * 60));
     timeUntil -= h * 1000 * 60 * 60
-    const m = Math.floor(timeUntil / (1000 * 60))
+    let m = Math.floor(timeUntil / (1000 * 60))
     timeUntil -= m * 1000 * 60
-    const s = Math.floor(timeUntil / 1000)
+    let s = Math.floor(timeUntil / 1000)
+    if (d < 0) {
+      d = 0
+      h = 0
+      m = 0
+      s = 0
+    }
     return {d, h, m, s}
   }
 
